@@ -9,7 +9,7 @@ import profile from '../assets/profile.webp';
 
 const Navbar = () => {
   return (
-    <div className='flex justify-between px-6 py-2'>
+    <div className='flex justify-between px-6 py-2 fixed top-0 w-[100%] bg-white'>
       <div className='flex space-x-4 items-center'>
         <RxHamburgerMenu className="text-xl cursor-pointer" />
         <img src={logo} alt='youtube logo' className=' w-24 cursor-pointer'/>
