@@ -139,13 +139,13 @@ const Sidebar = () => {
     ]
 
   return (
-    <div className='px-4 w-[15%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden mt-20'>
+    <div className='px-4 w-[28%] h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden'>
         {/* Home */}
         <div className='space-y-3 items-center'>
             {
                 sidebarItems.map((item)=>{
                     return(
-                        <div className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                        <div key={item.id} className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
                             <div className='text-xl cursor-pointer'>{item.icon}</div>
                             <span className='cursor-pointer'>{item.name}</span>
                         </div>
@@ -166,7 +166,7 @@ const Sidebar = () => {
             {
                 sidebarItems2.map((item)=>{
                     return(
-                        <div className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                        <div key={item.id} className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
                             <div className='text-xl cursor-pointer'>{item.icon}</div>
                             <span className='cursor-pointer'>{item.name}</span>
                         </div>
@@ -186,7 +186,7 @@ const Sidebar = () => {
             {
                 sidebarItems3.map((item)=>{
                     return(
-                        <div className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                        <div key={item.id} className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
                             <div className='text-xl cursor-pointer'>{item.icon}</div>
                             <span className='cursor-pointer'>{item.name}</span>
                         </div>
@@ -206,7 +206,7 @@ const Sidebar = () => {
             {
                 sidebarItems4.map((item)=>{
                     return(
-                        <div className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                        <div key={item.id} className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
                             <div className='text-xl cursor-pointer text-red-500'>{item.icon}</div>
                             <span className='cursor-pointer'>{item.name}</span>
                         </div>
@@ -225,7 +225,7 @@ const Sidebar = () => {
             {
                 sidebarItems5.map((item)=>{
                     return(
-                        <div className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
+                        <div key={item.id} className='flex items-center space-x-6 hover:bg-gray-300 duration-300 rounded-xl p-1'>
                             <div className='text-xl cursor-pointer'>{item.icon}</div>
                             <span className='cursor-pointer'>{item.name}</span>
                         </div>

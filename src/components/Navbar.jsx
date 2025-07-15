@@ -14,9 +14,9 @@ const Navbar = () => {
         <RxHamburgerMenu className="text-xl cursor-pointer" />
         <img src={logo} alt='youtube logo' className=' w-24 cursor-pointer'/>
       </div>
-      <div className='flex w-[40%] h-15 py-2 items-center'>
+      <div className='flex w-[40%] h-15 py-2 items-center border-gray-400'>
         <div className='w-[100%] px-3 py-2 border rounded-l-full'><input type="text" placeholder='Search'/></div>
-        <button className='px-4 py-2 bg-gray-100 rounded-r-full'>
+        <button className='px-4 py-2 bg-gray-100 rounded-r-full border-gray-400'>
           <CiSearch size={"24px"}/>
         </button>
         <IoMdMic size={"40px"} className='py-2 ml-3 border rounded-full bg-gray-100 cursor-pointer hover:bg-gray-200 duration-200' />
